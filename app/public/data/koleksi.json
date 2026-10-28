@@ -1,10 +1,82 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Lari Pagi di Embung",
+    "kategori": "Kardio",
+    "tanggal": "2026-10-01",
+    "durasi": 30,
+    "kalori": 220
+  },
+  {
+    "id": "2",
+    "judul": "Bersepeda di Embung",
+    "kategori": "Kardio",
+    "tanggal": "2026-10-03",
+    "durasi": 45,
+    "kalori": 280
+  },
+  {
+    "id": "3",
+    "judul": "Lompat Tali Sore",
+    "kategori": "Kardio",
+    "tanggal": "2026-10-05",
+    "durasi": 15,
+    "kalori": 150
+  },
+  {
+    "id": "4",
+    "judul": "Latihan Push Up",
+    "kategori": "Kekuatan",
+    "tanggal": "2026-10-07",
+    "durasi": 15,
+    "kalori": 70
+  },
+  {
+    "id": "5",
+    "judul": "Squat Tanpa Beban",
+    "kategori": "Kekuatan",
+    "tanggal": "2026-10-09",
+    "durasi": 20,
+    "kalori": 90
+  },
+  {
+    "id": "6",
+    "judul": "Plank",
+    "kategori": "Kekuatan",
+    "tanggal": "2026-10-11",
+    "durasi": 10,
+    "kalori": 40
+  },
+  {
+    "id": "7",
+    "judul": "Peregangan Seluruh Badan",
+    "kategori": "Kelenturan",
+    "tanggal": "2026-10-13",
+    "durasi": 15,
+    "kalori": 35
+  },
+  {
+    "id": "8",
+    "judul": "Yoga Pemula",
+    "kategori": "Kelenturan",
+    "tanggal": "2026-10-15",
+    "durasi": 30,
+    "kalori": 80
+  },
+  {
+    "id": "9",
+    "judul": "Bulu Tangkis Ganda",
+    "kategori": "Permainan",
+    "tanggal": "2026-10-17",
+    "durasi": 60,
+    "kalori": 350
+  },
+  {
+    "id": "10",
+    "judul": "Basket Setengah Lapangan",
+    "kategori": "Permainan",
+    "tanggal": "2026-10-19",
+    "durasi": 45,
+    "kalori": 300
   }
 ]
