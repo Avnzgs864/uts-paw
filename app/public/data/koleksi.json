@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "judul": "Lompat Tali Sore",
+    "judul": "Lompat Tali",
     "kategori": "Kardio",
     "tanggal": "2026-10-05",
     "durasi": 15,
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "judul": "Bulu Tangkis Ganda",
+    "judul": "Bulu Tangkis",
     "kategori": "Permainan",
     "tanggal": "2026-10-17",
     "durasi": 60,
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "judul": "Basket Setengah Lapangan",
+    "judul": "Basket",
     "kategori": "Permainan",
     "tanggal": "2026-10-19",
     "durasi": 45,
