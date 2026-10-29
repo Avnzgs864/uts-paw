@@ -11,7 +11,7 @@ export function KoleksiProvider({children}) {
         if (daftarLatihan !== null) return
         async function muatLatihan(){
             try {
-                const respon = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
+                const respons = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
                 if(!respon.ok){
                     throw new Error(`Data latihan gagal dimuat (status ${respon.status})`)
             }
