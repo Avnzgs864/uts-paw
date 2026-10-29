@@ -3,7 +3,7 @@ import mahasiswa from '../../mahasiswa.json'
 import useKoleksi from '../hooks/useKoleksi'
 
 export default function Beranda(){
-  const { item, loading } =useKoleksi()
+  const { items, loading } =useKoleksi()
 
   const jumlahKategori =new Set(
     items.map((latihan) => latihan.kategori)
