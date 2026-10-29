@@ -16,7 +16,7 @@ export function KoleksiProvider({children}) {
                     throw new Error(`Data latihan gagal dimuat (status ${respons.status})`)
             }
 
-            const dataLatihan = await respons.json
+            const dataLatihan = await respons.json()
             setDaftarLatihan(dataLatihan)
             }catch(masalah){
                 setError(masalah.message)
