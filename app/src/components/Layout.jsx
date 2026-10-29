@@ -11,15 +11,16 @@ const daftar_menu = [
 
 export default function Layout(){
     return(
-        <div className="keraangka">
-            <header className="header">
+        <div className="kerangka">
+            <header className="kepala">
                 <strong>Jurnal Latihan Olahraga</strong>
-                <nav className="menu"></nav>
+                <nav className="menu">
                 {daftar_menu.map (({ke, label}) => (
                     <NavLink key={ke} to={ke} end={ke ==='/'}>
                         {label}
                     </NavLink>
                 ))}
+                </nav>
             </header>
 
             <main className="isi">
