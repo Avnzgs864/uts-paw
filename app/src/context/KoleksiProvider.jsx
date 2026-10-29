@@ -12,8 +12,8 @@ export function KoleksiProvider({children}) {
         async function muatLatihan(){
             try {
                 const respons = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
-                if(!respon.ok){
-                    throw new Error(`Data latihan gagal dimuat (status ${respon.status})`)
+                if(!respons.ok){
+                    throw new Error(`Data latihan gagal dimuat (status ${respons.status})`)
             }
 
             const dataLatihan = await respons.json
