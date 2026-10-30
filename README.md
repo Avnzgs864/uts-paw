@@ -65,17 +65,31 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 ```markdown
 # Nama Aplikasi
 
-Nama: ...
-NIM: ...
-Kelas: ...
-Tema: ...
-Deployment: https://USERNAME.github.io/uts-paw/
+Nama: Refin Agus Saputra
+NIM: 124140126
+Kelas: RA
+Tema: Jurnal Latihan Olahraga
+Deployment: https://Avnzgs864.github.io/uts-paw/
 
-![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar beranda](docs/Beranda.png)
+![Tangkapan layar daftar latihan](docs/Daftar_Latihan.png)
+![Tangkapan layar detail koleksi](docs/detail_koleksi.png)
+![Tangkapan layar statistik](docs/Statistik.png)
+![Tangkapan layar tambah latihan](docs/Tambah.png)
+![Tangkapan layar tentang](docs/Tentang.png)
+
 
 ## Fitur
 
-- ...
+- Beranda yang menampilkan jumlah latihan dan jumlah kategori
+-  Daftar latihan dengan pencarian berdasarkan judul dan filter kategori
+- Halaman detail yang menampilkan judul, kategori, tanggal, durasi, dan kalori terbakar
+- Formulir tambah latihan dengan pemeriksaan judul sebelum data disimpan
+- Penghapusan latihan melalui konfirmasi pada halaman detail
+- Penyimpanan data menggunakan localStorage agar perubahan tetap tersimpan setelah halaman dimuat ulang pada browser yang sama
+- Statistik jumlah latihan berdasarkan kategori dalam bentuk tabel
+- Halaman tentang yang menampilkan identitas mahasiswa dan tautan repositori
+- Halaman 404 untuk alamat yang tidak terdaftar
 
 ## Menjalankan secara lokal
 
@@ -85,5 +99,10 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+- Komponen untuk membagi tampilan menjadi bagian seperti layout, kotak pencarian, dan kartu latihan
+- Props untuk mengirim data dari komponen induk ke komponen anak
+- useState untuk menyimpan keadaan pencarian, filter kategori, isian formulir, dan pesan kesalahan
+- useEffect untuk memuat data awal dan menyinkronkan data dengan localStorage
+- Context untuk menyediakan data latihan serta fungsi tambah dan hapus kepada komponen yang membutuhkan
+- Custom hook useKoleksi untuk mengakses data dari Context
+- Custom hook useLocalStorage untuk mengelola penyimpanan data pada browser
