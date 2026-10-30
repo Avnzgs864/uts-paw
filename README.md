@@ -62,7 +62,7 @@ Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi me
 
 Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
 
-```markdown
+
 # Nama Aplikasi
 
 Nama: Refin Agus Saputra
@@ -77,7 +77,6 @@ Deployment: https://Avnzgs864.github.io/uts-paw/
 ![Tangkapan layar statistik](docs/Statistik.png)
 ![Tangkapan layar tambah latihan](docs/Tambah.png)
 ![Tangkapan layar tentang](docs/Tentang.png)
-
 
 ## Fitur
 
