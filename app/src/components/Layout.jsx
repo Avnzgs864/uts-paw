@@ -28,7 +28,8 @@ export default function Layout(){
             </main>
 
             <footer className="kaki">
-                UTS Pengembangan Aplikasi WEB By Refin Agus Saputra
+                <span>UTS Pengembangan Aplikasi Web</span>
+                <span className='nama'>Refin Agus Saputra</span>
             </footer>
         </div>
     )

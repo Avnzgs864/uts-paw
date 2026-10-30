@@ -6,19 +6,25 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #f5f6f8;
+  color: #1f2937;
 }
 
 .kepala {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 30px;
+  background-color: #AC81C6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 8px;
 }
 
 .menu a.active {
@@ -33,11 +39,29 @@
   padding: 1.5rem;
 }
 
+.tombol-latihan {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 16px;
+  border: 1px solid #AC81C6;
+  border-radius: 8px;
+  color: #AC81C6;
+  transition: none;
+}
+
+.tombol-latihan:hover {
+  background-color: #AC81C6;
+  color: #ffffff;
+}
+
 .kaki {
   padding: 1rem 1.5rem;
   border-top: 1px solid #dcdcdc;
   color: #57606a;
   font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .aksi {
@@ -107,4 +131,27 @@
   .daftar-kartu {
     grid-template-columns: 1fr;
   }
+}
+
+.kerangka,
+.kerangka * {
+    box-sizing: border-box;
+}
+
+.menu a {
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #374151;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #ffffff;
+  color: #AC81C6;
+  transform: translateY(-2px);
+}
+
+.nama {
+    font-weight: 600;
+    color: #166534;
 }

@@ -10,7 +10,6 @@ const AWAL = {
     durasi: '',
     kalori: ''
 }
-
 export default function Tambah() {
     const { tambah } = useKoleksi()
     const navigate = useNavigate()
@@ -23,18 +22,14 @@ export default function Tambah() {
             [e.target.name]: e.target.value
         })
     }
-
     const simpan = (e) => {
         e.preventDefault()
-
         if (form.judul.trim().length < 3) {
             setGalat('Judul wajib diisi, minimal 3 karakter.')
             return
         }
-
         const durasi = Number(form.durasi)
         const kalori = Number(form.kalori)
-
         if (
             !Number.isFinite(durasi) ||
             !Number.isFinite(kalori) ||
@@ -44,25 +39,19 @@ export default function Tambah() {
             setGalat('Durasi dan kalori harus berupa angka nol atau lebih.')
             return
         }
-
         setGalat('')
-
         tambah({
             ...form,
             judul: form.judul.trim(),
             durasi,
             kalori
         })
-
         navigate('/koleksi')
     }
-
     return (
         <form className="formulir" onSubmit={simpan} noValidate>
             <h1>Tambah Latihan</h1>
-
             {galat && <p role="alert">{galat}</p>}
-
             <label htmlFor="judul">Judul</label>
             <input
                 id="judul"
@@ -71,7 +60,6 @@ export default function Tambah() {
                 value={form.judul}
                 onChange={ubah}
             />
-
             <label htmlFor="kategori">Kategori</label>
             <select
                 id="kategori"
@@ -84,7 +72,6 @@ export default function Tambah() {
                 <option value="Kelenturan">Kelenturan</option>
                 <option value="Permainan">Permainan</option>
             </select>
-
             <label htmlFor="tanggal">Tanggal</label>
             <input
                 id="tanggal"
@@ -93,7 +80,6 @@ export default function Tambah() {
                 value={form.tanggal}
                 onChange={ubah}
             />
-
             <label htmlFor="durasi">Durasi</label>
             <input
                 id="durasi"
@@ -105,7 +91,6 @@ export default function Tambah() {
                 value={form.durasi}
                 onChange={ubah}
             />
-
             <label htmlFor="kalori">Kalori Terbakar</label>
             <input
                 id="kalori"
@@ -117,7 +102,6 @@ export default function Tambah() {
                 value={form.kalori}
                 onChange={ubah}
             />
-
             <button type="submit">Simpan</button>
         </form>
     )

@@ -22,7 +22,7 @@ export default function Beranda(){
         </p>
       )}
 
-      <Link to="/koleksi">Lihat semua latihan</Link>
+      <Link to="/koleksi" className="tombol-latihan">Lihat semua latihan</Link>
     </section>
   )
 }
